@@ -1,0 +1,398 @@
+/* Add your custom styles here */
+
+/* Themed Colors */
+
+:root {
+  --primary-color: #4286f4; /* Coral Red */
+  --secondary-color: #8202c9; /* Sky Blue */
+  --accent-color: #ffc107; /* Yellow */
+  --text-color: #fff; /* Dark Gray Text Color */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.header-slider {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease 0.5s forwards;
+  color: #fff;
+  opacity: 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  animation: fadeInUp 1.5s ease 1s forwards;
+  color: #fff;
+  opacity: 0;
+}
+
+/* Rest of the CSS remains the same as provided earlier */
+/* Projects Section */
+#projects {
+  padding: 50px 0;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Center the heading */
+h2.text-center {
+  margin-bottom: 30px;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease;
+  color: var(--primary-color);
+}
+
+section p {
+  font-size: 1.25rem;
+  animation: fadeInUp 1s ease 0.5s;
+  color: #555;
+}
+
+/* Styling for the About Me section */
+section#about {
+  background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+  border-top: 1px solid #e0e0e0;
+}
+
+section#about h2 {
+  color: var(--primary-color);
+}
+
+section#about p {
+  line-height: 1.8;
+}
+section#skills {
+  background-color: #f9f9f9; /* Light Gray background for the Skills section */
+}
+
+.skill-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card .card-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-card ul {
+  padding: 0;
+}
+
+.skill-card ul li {
+  font-size: 1.1rem;
+  padding: 5px 0;
+}
+
+/* Gradient Background Colors for Skill Cards */
+.gradient-red {
+  background: linear-gradient(to right, #ff6b6b, #ffbe76); /* Coral Red to Light Orange */
+}
+
+.gradient-blue {
+  background: linear-gradient(to right, #45aaf2, #a0c4ff); /* Sky Blue to Light Blue */
+}
+
+.gradient-purple {
+  background: linear-gradient(to right, #8202c9, #be9eff); /* Purple to Light Purple */
+}
+/* Hover Effects */
+a:hover {
+  color: var(--primary-color);
+}
+.skill-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle box-shadow on hover */
+  background-color: var(--secondary-color); /* Change the background color on hover */
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+/* Add any additional styles, animations, and transitions as desired */
+/* Add your custom styles here */
+
+/* Themed Colors */
+/* Add your custom styles here */
+
+/* Themed Colors */
+/* Add your custom styles here */
+
+/* Rest of the CSS remains the same as provided earlier */
+
+/* styles.css */
+
+/* Add styles for the header and footer as needed */
+
+/* Experience section styles */
+/* styles.css */
+
+/* Add styles for the header and footer as needed */
+
+/* Experience section styles */
+#experience {
+  background-color: #f7f7f7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.experience-item {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-item h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Additional Styles for a Different Experience Section */
+.experience-item:before {
+  content: "\f51f"; /* Font Awesome icon (adjust as needed) */
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  font-size: 26px;
+  transform: translateX(-50%);
+  color: #3498db; /* Adjust icon color */
+  opacity: 0.6;
+}
+
+.experience-item:hover:before {
+  opacity: 1;
+}
+
+.experience-item:hover .card-body {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 0 0 12px 12px;
+}
+
+.experience-item .card-body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 0 0 12px 12px;
+}
+
+.experience-item .card-footer {
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+.experience-item .card-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.experience-item .card-footer a:hover {
+  color: #2980b9;
+}
+
+
+/* Rest of the CSS remains the same as provided earlier */
+
+section#education {
+  background-color: #f9f9f9; /* Light Gray background for the Education section */
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary-color); /* Coral Red vertical line */
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for timeline content */
+}
+
+.timeline-date {
+  color: var(--accent-color); /* Yellow date color */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
